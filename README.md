@@ -1,20 +1,32 @@
-🧠 Ollama Flask API
-A Flask-based REST API that interfaces with Ollama to provide endpoints for:
+# 🧠 Ollama Chat & Prompt API
 
-Chatting with language models (/chat)
+This is a Flask-based API that provides endpoints to interact with [Ollama](https://ollama.com/) models. It includes:
 
-Enhancing prompts for image/video generation (/enhance-prompt)
+- Chatting with LLMs (via `/chat`)
+- Enhancing prompts for image/video generation (via `/enhance-prompt`)
+- Listing, pulling, and tracking models
+- Service health checks
 
-Managing models (list, pull, and track download status)
+---
 
-Health checks
+## 🚀 Features
 
-🚀 Features
-/chat: Interact with a language model using custom messages and optional chat history.
+- ✅ Chat with LLM models like `llama3.2`
+- 🎨 Enhance vague prompts into rich, detailed image/video generation prompts
+- 🔍 List all available Ollama models
+- ⬇️ Pull models on-demand
+- 📊 Track model download status
+- ❤️ Health check endpoint
 
-/enhance-prompt: Enhance user-written prompts into rich, detailed prompts suitable for AI image/video generation.
+---
 
-/models: List, pull, and monitor the status of Ollama models.
+## 📦 Requirements
 
-/health: Check the health status of the API and Ollama backend.
+- Python 3.8+
+- `ollama` Python client
+- Flask
 
+Install dependencies:
+
+```bash
+pip install flask requests ollama
